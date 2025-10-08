@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening Formulieren</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        
+        <table>
+            <tr>
+                <td><label for="naam">Naam:</label></td>
+                <td><input type="text" id="naam"></td>
+                <td><label for="voornaam">Voornaam:</label></td>
+                <td><input type="text" id="voornaam"></td>
+            <tr>
+                <td><label for="adres">Adres:</label></td>
+                <td colspan="3"><Textarea cols="50" rows="2" id="adres"></Textarea></td>
+            </tr>
+            <tr>
+                <td><label for="postcode">Postcode:</label></td>
+                <td><input type="text" id="postcode"></td>
+                <td><label for="gemeente">Gemeente:</label></td>
+                <td><input type="text" id="gemeente"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email adres:</label></td>
+                <td><input type="text" value="@student.ucll.be" id="email"></td>
+            </tr>
+             <tr>
+                <td><label for="website">Website:</label></td>
+                <td><input type="text" placeholder="Website van je bedrijf" id="website"></td>
+            </tr>
+            <tr>
+                <td><label for="geboortedatum">Geboortedatum:</label></td>
+                <td><input type="date" id="geboortedatum"></td>
+                <td><label for="kinderen">Aantal kinderen:</label></td>
+                <td><input type="number" id="kinderen"></td>
+            </tr>
+            <tr>
+                <td>Geslacht:</td>
+                <td><input type="radio" id="man" name="geslacht"><label for="man">Man</label><input type="radio" id="vrouw" name="geslacht"><label for="vrouw">Vrouw</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" checked ><label>Wij mogen u per e-mail contacteren</label></td>
+                <td colspan="2"><input type="checkbox" checked ><label>Wij mogen u per post contacteren</label></td>
+                
+            </tr>
+        </table>
+
+    </fieldset>
+    <fieldset>
+        <legend>Opdracht</legend>
+        <table>
+
+            <tr>
+                <td><label for="uploaden">Uploaden:</label></td>
+                <td><input type="file" id="uploaden"></td>
+                <td><label for="paswoord">Paswoord:</label></td>
+                <td><input type="text" id="paswoord"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><select >
+                    <option value="Keuze 1">Keuze 1</option>
+                    <option value="Keuze 2">Keuze 2</option>
+                    <option value="Keuze 3">Keuze 3</option>
+                    <option value="Keuze 4">Keuze 4</option>
+                    <option value="Keuze 5">Keuze 5</option>
+                </select></td>
+                <td colspan="2"><select size="3" multiple>
+                    <option value="Keuze 6">Keuze 6</option>
+                    <option value="Keuze 7">Keuze 7</option>
+                    <option value="Keuze 8">Keuze 8</option>
+                    <option value="Keuze 9">Keuze 9</option>
+                    <option value="Keuze 10">Keuze 10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="zoeken">Zoeken:</label></td>
+                <td><input type="text" id="zoeken"></td>
+            </tr>
+            <tr>
+                <td><label for="kleur">Achtergrondkleur:</label></td>
+                <td><input type="color" id="kleur"></td>
+                <td><label for="afwijking">Afwijking:</label></td>
+                <td><input type="range" id="afwijking"></td>
+            </tr>
+        </table>
+        
+    </fieldset>
+    <br>
+    <input type="button" value="Verstuur">
+    <input type="button" value="Maak leeg">
+</body>
+</html>
