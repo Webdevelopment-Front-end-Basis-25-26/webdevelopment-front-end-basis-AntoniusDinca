@@ -124,3 +124,69 @@ ul li ul li:hover ~ li {
 ul li ul li:first-child{
     list-style-type:disc;
 }
+
+/*formulieren*/
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+/*form naam*/
+input[name="naam"]{
+    background-color: #FF1111;
+}
+
+input[name="naam"]:hover{
+    background-color: #991111;
+}
+
+input[name="naam"]:active{
+    background-color: #11FF11;
+}
+
+input[name="naam"]:focus{
+    background-color: #11FF11;
+}
+
+/*form voornaam*/
+input[name="voornaam"]{
+    background-color: #11f;
+}
+
+input[name="voornaam"]:hover{
+    background-color: #111199;
+}
+
+input[name="voornaam"]:active{
+    background-color: #11FF11;
+}
+
+input[name="voornaam"]:focus{
+    background-color: #11FF11;
+}
+
+/*Ik ben tevreden label*/
+input[id="tevreden"] + label {
+    color: #119911;
+}
+
+input[id="tevreden"]:checked + label {
+    color: #116611;
+}
+
+/*Ik ben NIET tevreden label*/
+input[id="ontevreden"] + label {
+    color: #991111;
+}
+
+input[id="ontevreden"]:checked + label {
+    color: #661111;
+}
+
+/*footer*/
+
+footer p{
+    font-size: 0.75em;
+    text-align: right;
+}
