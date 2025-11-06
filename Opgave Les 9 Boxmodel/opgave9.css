@@ -1,0 +1,200 @@
+/* Basisinstellingen */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: #317082;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+/* Container */
+#container {
+  width: 905px; /* 945px - 2 * 20px padding */
+  padding: 20px;
+  background-color: #fff;
+  margin: auto;
+}
+
+/* Titel in de header */
+header h1 {
+  background-color: #317082;
+  color: #fff;
+  font-weight: normal;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 5px #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #317082;
+  margin-bottom: 20px;
+}
+
+/* Navigatie */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ol {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ol li {
+  background-color: #317082;
+  display: inline-block;
+  border-radius: 10px / 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+nav ol li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ol li:hover {
+  background-color: #204955;
+}
+
+nav ol li:hover a {
+  color: #204955;
+}
+
+nav ol li a:hover {
+  color: #fff;
+}
+
+/* Banner */
+#banner {
+  background-image: url(images/banner.jpg);
+  background-repeat: no-repeat;
+  width: 905px;
+  height: 214px;
+  margin-bottom: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#banner p {
+  width: 280px;
+  height: 214px;
+  box-sizing: border-box;
+}
+
+#banner p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Content */
+#content h2 {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: normal;
+  background-color: hsl(192, 45%, 35%);
+  color: #fff;
+  padding: 5px;
+  border: 5px outset hsl(192, 45%, 25%);
+  border-top-right-radius: 20px;
+}
+
+#content p {
+  margin: 10px 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted hsl(192, 45%, 25%);
+}
+
+/* Tabel */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 4px ridge hsl(192, 45%, 25%);
+}
+
+th, td {
+  border: 1px solid hsl(192, 45%, 25%);
+  padding: 5px;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+tr:hover td {
+  background-color: rgba(49, 112, 130, 0.5);
+}
+
+/* Formulier */
+form {
+  margin: 20px 0;
+}
+
+fieldset {
+  border: 3px double hsl(192, 45%, 25%);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+legend {
+  border: 3px double hsl(192, 45%, 25%);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+/* Zorg dat labels en inputs naast elkaar staan */
+label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Inputvelden netjes naast elkaar */
+input[type="text"] {
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid hsl(192, 45%, 25%);
+  border-radius: 10px / 5px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 10px;
+  box-shadow: inset 0 0 4px #204955;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:hover {
+  box-shadow: inset 0 0 8px #204955;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(49, 112, 130, 0.5);
+  box-shadow: inset 0 0 8px #204955;
+  outline: none;
+}
+
+/* Submit knop */
+input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid hsl(192, 45%, 25%);
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #317082;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 5px #317082;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #204955;
+}
