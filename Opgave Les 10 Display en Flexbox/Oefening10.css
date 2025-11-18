@@ -1,0 +1,199 @@
+* {
+
+ margin: 0;
+
+ padding: 0;
+
+ box-sizing: border-box;
+
+}
+
+body {
+
+ font-family: Helvetica, Tahoma, Arial, sans-serif;
+
+ background-color: rgb(147, 162, 243);
+
+}
+
+input, textarea {
+
+ font-family: inherit;
+
+ font-size: 1em;
+
+}
+
+/*container*/
+.container {
+    background-color: #fff;
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*header*/
+
+header {
+    background-image: url(images/header.jpg);
+    height: 215px;
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: right;
+    color: #EEEEEE;
+
+}
+
+header h2{
+    display: none;
+}
+
+header image::before{
+    background-color: #fff;
+}
+
+/*navigatie*/
+nav {
+    margin: 10px;
+    
+}
+
+nav ol{
+    list-style: none; 
+}
+
+
+nav ol li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(147, 162, 243);
+    padding: 10px;
+    height: 40px;
+    width: 140px;
+    
+    
+}
+
+nav ol li a:hover{
+    background-color: rgb(101, 135, 224);
+}
+
+nav > ol{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+nav > ol > li > ol{
+    visibility: collapse;
+}
+
+nav > ol >li:hover > ol > li{
+    visibility: visible;
+}
+
+/*content*/
+#content{
+    margin: 5px;
+    display: flex;
+}
+
+#content article{
+    border: 1px dotted black;
+    padding: 10px;
+    max-height: fit-content;
+    margin: 5px;
+    
+}
+
+#content article h2{
+    border-bottom: 1px dotted black;
+
+}
+
+#content article p{
+    text-align: justify;
+    
+}
+
+#content article p{
+    text-indent: 20px;
+}
+
+/*formulier*/
+fieldset{
+    margin: 10px;
+    border-radius: 10px;
+}
+fieldset legend{
+    margin: 10px;
+}
+
+input{
+    border: 1px solid gray;
+    border-radius: 20px / 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+textarea{
+    border: 1px solid gray;
+    border-radius: 20px / 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+form div{
+    display: flex;
+}
+
+div label{
+    display: flex;
+    align-items: center;
+    
+    
+}   
+
+div label:first-child{
+    
+    width: 120px !important;
+    display: flex !important;
+    justify-content: right !important;
+    
+}
+
+
+
+div:last-child {
+    display: flex;
+    justify-content: right;
+}
+
+
+/*footer*/
+
+footer{
+    background-image: url(images/header.jpg);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    background-position: bottom;
+    
+    
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}
